@@ -7,6 +7,7 @@ Includes the following subfolders
 - pyarrow - Python scientific stack to explore pyarrow
 
 # References
+* [Apache Arrow Docs](https://arrow.apache.org/docs/)
 * [Arrow vs. Parquet vs. Orc](http://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html)
 * [Dremio](https://www.slideshare.net/dremio/apache-arrow-in-theory-in-practice)
 * [Zdnet](https://www.zdnet.com/article/apache-arrow-the-little-data-accelerator-that-could/)
