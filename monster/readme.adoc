@@ -14,9 +14,4 @@ $ mvn exec:java -Dexec.mainClass=org.ashee.SampleBinary
 ```
 
 = References
-* http://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html[Arrow vs. Parquet vs. Orc]
-* https://www.slideshare.net/dremio/apache-arrow-in-theory-in-practice[Dremio]
-* https://www.zdnet.com/article/apache-arrow-the-little-data-accelerator-that-could/[Zdnet]
-* https://blog.cloudera.com/blog/2016/02/introducing-apache-arrow-a-fast-interoperable-in-memory-columnar-data-structure-standard/[Cloudera in-memory]
-* http://wesmckinney.com/blog/apache-arrow-pandas-internals/[Pandas Internals]
-* http://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/[Plasma]
+* TBD
