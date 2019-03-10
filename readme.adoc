@@ -1,7 +1,0 @@
-= Flatbuffers
-
-This is a project for me to spelunk flatbuffers.
-It includes integration of mvn support for flatc
-
-flatbuffer files included in src/main/fbs is automatically run through flatc.
-Generated code is then compiled with application specific java code.
