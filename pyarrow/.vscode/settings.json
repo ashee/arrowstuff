@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/amitava/miniconda3/envs/dstack/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.condaPath": "/Users/amitava/miniconda3/bin/conda",
+    "python.venvPath": "/Users/amitava/miniconda3/envs"
+}

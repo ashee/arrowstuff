@@ -98,7 +98,7 @@ Python 3.7.2
 
 ## Create conda environment
 ```
-$ conda create -n dstack numpy scipy pandas scikit-learn notebook
+$ conda create -n dstack numpy scipy pandas scikit-learn notebook autopep8 pylint
 Collecting package metadata: done
 Solving environment: done
 
