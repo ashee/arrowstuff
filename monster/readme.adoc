@@ -6,6 +6,13 @@ It includes integration of mvn support for flatc
 flatbuffer files included in src/main/fbs is automatically run through flatc.
 Generated code is then compiled with application specific java code.
 
+= Build instructions
+
+```
+$ mvn package
+$ mvn exec:java -Dexec.mainClass=org.ashee.SampleBinary
+```
+
 = References
 * http://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html[Arrow vs. Parquet vs. Orc]
 * https://www.slideshare.net/dremio/apache-arrow-in-theory-in-practice[Dremio]
