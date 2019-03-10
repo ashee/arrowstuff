@@ -21,6 +21,7 @@ package org.ashee;
 import MyGame.Sample.*;
 import com.google.flatbuffers.FlatBufferBuilder;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -107,26 +108,32 @@ class SampleBinary {
 
     // Example how to use FlatBuffers to create and read binary buffers.
     public static void main(String[] args) throws Exception {
+        final String path = "monster.bin";
+
         SampleBinary sb = new SampleBinary();
         ByteBuffer buf = sb.createMonster();
-        save(buf);
+        save(buf, path);
 
-        buf = load("monster.bin");
+        buf = load(path);
         Monster monster = sb.loadMonster(buf);
+
         System.out.println("The FlatBuffer was successfully created and verified!");
     }
 
-    public static void save(ByteBuffer buffer) throws Exception {
-        try (FileChannel fc = new FileOutputStream("monster.bin").getChannel()) {
+    public static void save(ByteBuffer buffer, String path) throws Exception {
+        try (FileChannel fc = new FileOutputStream(path).getChannel()) {
             fc.write(buffer);
         }
     }
 
     public static ByteBuffer load(String path) throws IOException {
-        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        File f = new File(path);
+        int len = (int) f.length();
+        ByteBuffer buffer = ByteBuffer.allocate(len);
         try (FileChannel fc = new FileInputStream(path).getChannel()) {
-            fc.read(buffer);
+            fc.read(buffer, len);
         }
+        buffer.rewind();
         return buffer;
     }
 }
